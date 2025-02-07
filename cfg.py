@@ -84,13 +84,13 @@ _CONFIG = dict(
     ),
     VAL=dict(
         BMK=dict(
-            name="FreiHand",
-			json_dir='dataset/eval.json',
-            eval_dir="/data/FreiHAND/evaluation/rgb/",
+            name="250207_bare_hand",
+			json_dir='data/250207_bare_hand/eval_HL.json',
+            # eval_dir="data/HL/images/",
             scale_enlarge=1.25,
             ),
         IMAGE_SHAPE=(224, 224),
-        BATCH_SIZE=64,
+        BATCH_SIZE=1,
         ROOT_INDEX=0,
     ),
 )
