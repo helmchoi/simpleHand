@@ -37,9 +37,11 @@ class HandMeshEvalDatasetHL(Dataset):
         img = self.read_image(image_path)
         
         # [TODO] 390.0, 50.0, 500.0, 620.0
-        K = np.array([[767.8338012695312, 0.0, 629.979248046875], [0.0, 767.8338012695312, 348.5633239746094], [0.0, 0.0, 1.0]])
-        center = np.array([640.0, 360.0])
-        scale = 620.0
+        # K = np.array([[767.8338012695312, 0.0, 629.979248046875], [0.0, 767.8338012695312, 348.5633239746094], [0.0, 0.0, 1.0]])
+        K = np.array([[731.158, 0.0, 634.312], [0.0, 731.158, 351.922], [0.0, 0.0, 1.0]])
+        # center = np.array([640.0, 360.0])
+        center = np.array([630.0, 400.0])
+        scale = 660.0
         
         # perspective trans
         new_K, trans_matrix_2d, trans_matrix_3d = get_2d3d_perspective_transform(K, center, scale, self.rot_angle, self.img_size[0])

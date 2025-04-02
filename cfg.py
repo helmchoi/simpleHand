@@ -84,8 +84,8 @@ _CONFIG = dict(
     ),
     VAL=dict(
         BMK=dict(
-            name="250207_bare_hand",
-			json_dir='data/250207_bare_hand/eval_HL.json',
+            name="2.Qual",
+			json_dir='data/2.Qual/eval_HL.json',
             # eval_dir="data/HL/images/",
             scale_enlarge=1.25,
             ),

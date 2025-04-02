@@ -1,13 +1,13 @@
 import os
 import json
 
-folder_path = "250207_bare_hand/"
+folder_path = "2.Qual/"
 imglist = sorted(os.listdir(folder_path + "images/"))
 list_ = []
 for imgname in imglist:
     # because of H2ONet..
-    if int(imgname[-5]) == 0:
-        list_ += ["data/" + folder_path + "images/" + imgname]
+    # if int(imgname[-5]) == 0:
+    list_ += ["data/" + folder_path + "images/" + imgname]
 
 print("Available images #", len(imglist))
 print("Total saved images #", len(list_))
